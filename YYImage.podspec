@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
     core.public_header_files = 'YYImage/*.{h}'
     core.libraries = 'z'
     core.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'AssetsLibrary', 'ImageIO', 'Accelerate', 'MobileCoreServices'
+    core.dependency 'XYCommonEngine'
   end
   
   s.subspec 'WebP' do |webp|
